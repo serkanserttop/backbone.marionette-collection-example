@@ -1,49 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <title>BACKBONE Marionette Tutorial: Collections</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Backbone.marionette-collection-example by serkanserttop</title>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
-    <script src="./assets/javascripts/vendor/underscore.js"></script>
-    <script src="./assets/javascripts/vendor/backbone.js"></script>
-    <script src="./assets/javascripts/vendor/backbone.marionette.js"></script>
-
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="./assets/css/custom.css" rel="stylesheet">
-
-    <script src="./assets/javascripts/application.js"></script>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div id="content">
+    <div class="wrapper">
+      <header>
+        <h1>Backbone.marionette-collection-example</h1>
+        <p>A basic example of using Backbone.Marionette to simplify building Backbone.js apps</p>
+
+        <p class="view"><a href="https://github.com/serkanserttop/backbone.marionette-collection-example">View the Project on GitHub <small>serkanserttop/backbone.marionette-collection-example</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/serkanserttop/backbone.marionette-collection-example/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/serkanserttop/backbone.marionette-collection-example/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/serkanserttop/backbone.marionette-collection-example">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Backbone.Marionette Collection Example + Sorting with Comparator</h1>
+
+<p>Please check below for the original readme.
+I extended that example with basic sorting, decided to share it.
+I may write a tutorial for it later.</p>
+
+<p>PS: I did not touch the parts that deal with rankUp and rankDown.
+They affect votes as well, the reason for such functionality seemed a bit confusing to me.
+But I am not interested in their functionality, just beware when you click up and down.</p>
+
+<h1>Backbone.Marionette Collection Example</h1>
+
+<p>This is a simple application reimplemented to use Backbone.Marionette and serve as a tutorial.</p>
+
+<p>The application development is cover by 2 blog posts:</p>
+
+<ol>
+<li><a href="http://davidsulc.com/blog/2012/04/15/a-simple-backbone-marionette-tutorial/">http://davidsulc.com/blog/2012/04/15/a-simple-backbone-marionette-tutorial/</a></li>
+<li><a href="http://davidsulc.com/blog/2012/04/22/a-simple-backbone-marionette-tutorial-part-2">http://davidsulc.com/blog/2012/04/22/a-simple-backbone-marionette-tutorial-part-2</a></li>
+</ol><p>The application is based on <a href="https://github.com/ddellacosta/backbone.js-examples/blob/master/collections3">https://github.com/ddellacosta/backbone.js-examples/blob/master/collections3</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/serkanserttop">serkanserttop</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
-    <script type="text/template" id="angry_cats-template">
-      <thead>
-        <tr class='header'>
-          <th>Rank</th>
-          <th>Votes</th>
-          <th>Name</th>
-          <th>Image</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </script>
-
-    <script type="text/template" id="angry_cat-template">
-      <td><%= rank %></td>
-      <td><%= votes %></td>
-      <td><%= name %></td>
-      <td><img class='angry_cat_pic' src='<%= image_path %>' /></td>
-      <td>
-        <div class='rank_up'><img id="rank_up" src='assets/images/up.gif' /></div>
-        <div class='rank_down'><img src='assets/images/down.gif' /></div>
-      </td>
-      <td><a href="#" class="disqualify">Disqualify</a></td>
-    </script>
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
