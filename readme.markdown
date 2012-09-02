@@ -9,6 +9,9 @@ PS: I did not touch the parts that deal with rankUp and rankDown.
 They affect votes as well, the reason for such functionality seemed a bit confusing to me.
 But I am not interested in their functionality, just beware when you click up and down.
 
+Demo is at http://jsbin.com/opakov/3
+Some css is overridden by the service, but the functionality is OK.
+
 Backbone.Marionette Collection Example
 ======================================
 
