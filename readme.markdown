@@ -1,3 +1,14 @@
+Backbone.Marionette Collection Example + Sorting with Comparator
+======================================
+
+Please check below for the original readme.
+I extended that example with basic sorting, decided to share it.
+I may write a tutorial for it later.
+
+PS: I did not touch the parts that deal with rankUp and rankDown.
+They affect votes as well, the reason for such functionality seemed a bit confusing to me.
+But I am not interested in their functionality, just beware when you click up and down.
+
 Backbone.Marionette Collection Example
 ======================================
 

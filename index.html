@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>BACKBONE Marionette Tutorial: Collections</title>
-
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
     <script src="./assets/javascripts/vendor/underscore.js"></script>
     <script src="./assets/javascripts/vendor/backbone.js"></script>
     <script src="./assets/javascripts/vendor/backbone.marionette.js"></script>
-
     <link href="./assets/css/bootstrap.css" rel="stylesheet">
     <link href="./assets/css/custom.css" rel="stylesheet">
-
+    <style>
+      .rankable{ background-color:gold;cursor:pointer; }
+      .ranking-desc{ -o-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform:rotate(180deg); }
+      .ranking-selected{ background-color:violet; }
+    </style>
     <script src="./assets/javascripts/application.js"></script>
   </head>
   <body>
-    <div id="content">
-    </div>
-
+    <div id="content"></div>
     <script type="text/template" id="angry_cats-template">
       <thead>
         <tr class='header'>
-          <th>Rank</th>
-          <th>Votes</th>
-          <th>Name</th>
-          <th>Image</th>
-          <th></th>
+          <th class="tablo-row-rank rankable">Rank</th>
+          <th class="tablo-row-votes rankable">Votes</th>
+          <th class="tablo-row-name rankable">Name</th>
+          <th class="tablo-row-picture">Image</th>
+          <th class="tablo-row-up_down"></th>
           <th></th>
         </tr>
       </thead>
-      <tbody>
-      </tbody>
+      <tbody></tbody>
     </script>
 
     <script type="text/template" id="angry_cat-template">
